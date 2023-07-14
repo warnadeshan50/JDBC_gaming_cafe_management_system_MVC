@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1062.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gaming_arena.controller.MembershipMainFormController">
+    <children>
+        <ImageView fitHeight="582.0" fitWidth="1079.0" layoutY="15.0">
+            <image>
+                <Image url="@../img/sec_win_backgorund.png" />
+            </image>
+        </ImageView>
+      <Label layoutX="33.0" layoutY="58.0" text="Membership ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="34.0" layoutY="97.0" text="Customer ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="143.0" text="Name" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="183.0" text="Address" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="227.0" text="Contact" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="271.0" text="E-mail" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="313.0" text="Membership Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="356.0" text="Mothly Payment Rs" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="name_lbl" layoutX="201.0" layoutY="143.0" text="Mr.Nobody" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="address_lbl" layoutX="201.0" layoutY="183.0" text="no.01noaddressyet" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="contact_lbl" layoutX="201.0" layoutY="227.0" text="07xxxxxxx" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="email_lbl" layoutX="201.0" layoutY="271.0" text="email.com" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="type_lbl" layoutX="203.0" layoutY="313.0" text="Gold" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="monthlypayment_lbl" layoutX="203.0" layoutY="356.0" text="00.00" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="membership_id_txt" layoutX="191.0" layoutY="55.0" onAction="#membership_id_txtOnAction" onKeyReleased="#membership_id_txtOnKeyReleased" style="-fx-background-radius: 20; -fx-border-color: yellow; -fx-border-radius: 20; -fx-text-fill: yellow;" unFocusColor="YELLOW" />
+      <JFXTextField fx:id="customer_id_txt" layoutX="191.0" layoutY="93.0" onAction="#customer_id_txtOnAction" onKeyReleased="#customer_id_txtOnKeyReleased" style="-fx-background-radius: 20; -fx-border-color: yellow; -fx-border-radius: 20; -fx-text-fill: yellow;" unFocusColor="YELLOW" />
+      <JFXButton fx:id="SearchBymemberId_btn" layoutX="342.0" layoutY="51.0" onAction="#SearchBymemberId_btnOnAction" style="-fx-border-color: yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5;" text="Search" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="searchByCustomerId_btn" layoutX="342.0" layoutY="90.0" onAction="#searchByCustomerId_btnOnAction" style="-fx-border-color: yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5;" text="Search" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="show_all_mem_btn" layoutX="33.0" layoutY="511.0" onAction="#show_all_btnOnAction" style="-fx-border-color: yellow; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-radius: 20;" text="Show all members" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="add_mem_btn" layoutX="169.0" layoutY="511.0" onAction="#add_mem_btnOnAction" style="-fx-border-color: yellow; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-radius: 20;" text="Add Member" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="more_btn" layoutX="277.0" layoutY="511.0" onAction="#more_btn_OnAction" style="-fx-border-color: yellow; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-radius: 20;" text="More" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+    </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gaming_arena.controller.SupplyItemsFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0">
+         <image>
+            <Image url="@../img/third_background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="55.0" layoutY="61.0" text="Item ID" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="100.0" text="Supplier ID" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="138.0" text="Number of Units" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="55.0" layoutY="174.0" text="One Qty Price" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="210.0" text="Date" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="date_lbl" layoutX="191.0" layoutY="210.0" text="20000-00-17" textFill="#fcfafa">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="item_cmb" layoutX="191.0" layoutY="59.0" onAction="#item_cmbOnAction" promptText="Choose" style="-fx-background-color: yellow; -fx-background-radius: 20; -fx-border-radius: 20;" />
+      <JFXComboBox fx:id="supply_cmb" layoutX="191.0" layoutY="98.0" onAction="#supply_cmbOnAction" promptText="Choose" style="-fx-background-color: yellow; -fx-background-radius: 20; -fx-border-radius: 20;" />
+      <JFXTextField fx:id="num_of_unit_txt" layoutX="189.0" layoutY="135.0" onKeyReleased="#num_of_unit_txtOnKeyReleased" prefHeight="27.0" prefWidth="91.0" style="-fx-border-color: yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-text-fill: yellow;" />
+      <JFXTextField fx:id="one_price_txt" layoutX="189.0" layoutY="171.0" onKeyReleased="#onePrice_txtOnKeyReleased" prefHeight="27.0" prefWidth="170.0" style="-fx-border-color: yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-text-fill: yellow;" />
+      <JFXButton fx:id="add_btn" layoutX="316.0" layoutY="254.0" onAction="#add_btnOnAction" style="-fx-border-color: yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5;" text="Add" textFill="YELLOW">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

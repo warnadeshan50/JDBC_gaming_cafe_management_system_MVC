@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gaming_arena.controller.UpdateMembershipFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="607.0">
+         <image>
+            <Image url="@../img/third_background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="56.0" layoutY="63.0" text="Membership ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="105.0" text="Customer ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="146.0" text="Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="56.0" layoutY="184.0" text="Monthly Payment Rs." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="type_cmb" layoutX="204.0" layoutY="139.0" onAction="#type_cmbOnAction" prefHeight="35.0" prefWidth="124.0" promptText="Choose" style="-fx-border-color: yellow; -fx-background-color: White; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-color: yellow;" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <Label fx:id="payment_lbl" layoutX="204.0" layoutY="184.0" text="Choose Type for payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="member_id_txt" layoutX="204.0" layoutY="61.0" onAction="#mem_id_txtOnAction" promptText="GG0001" style="-fx-border-color: yellow; -fx-border-radius: 20; -fx-text-fill: yellow;" />
+      <JFXTextField fx:id="customer_id_txt" layoutX="204.0" layoutY="102.0" onAction="#cust_id_txtOnAction" promptText="CU0001" style="-fx-border-color: yellow; -fx-border-radius: 20; -fx-text-fill: yellow;" />
+      <JFXButton fx:id="delete_btn" layoutX="343.0" layoutY="232.0" onAction="#delete_btnOnAction" style="-fx-border-color: Yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5;" text="Delete" textFill="#f7ef02">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="update_btn" layoutX="253.0" layoutY="232.0" onAction="#update_btnOnAction" style="-fx-border-color: Yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5;" text="Update" textFill="#f7ef02">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="cancel_btn" layoutX="455.0" layoutY="310.0" onAction="#cancel_btnOnAction" style="-fx-border-color: Yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5;" text="Cancel" textFill="#f7ef02">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="search_btn" layoutX="343.0" layoutY="53.0" onAction="#search_btnOnAction" style="-fx-border-color: Yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5;" text="Search" textFill="#f7ef02">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

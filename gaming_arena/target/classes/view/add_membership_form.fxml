@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gaming_arena.controller.AddMembershipFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="607.0">
+         <image>
+            <Image url="@../img/third_background.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="46.0" layoutY="53.0" text="Membership ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="95.0" text="Customer ID" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="136.0" text="Type" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="46.0" layoutY="174.0" text="Monthly Payment Rs." textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="payment_lbl" layoutX="194.0" layoutY="174.0" text="Choose Type for payment" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="member_id_lbl" layoutX="194.0" layoutY="53.0" text="GG0001" textFill="#f7029c">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <JFXComboBox fx:id="cust_id_cmb" layoutX="185.0" layoutY="88.0" onAction="#cust_id_cmbOnAction" prefHeight="35.0" prefWidth="124.0" promptText="Choose" style="-fx-border-color: yellow; -fx-background-color: White; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-color: yellow;" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXComboBox fx:id="type_cmb" layoutX="185.0" layoutY="129.0" onAction="#type_cmbOnAction" prefHeight="35.0" prefWidth="124.0" promptText="Choose" style="-fx-border-color: yellow; -fx-background-color: White; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5; -fx-background-color: yellow;" unFocusColor="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXComboBox>
+      <JFXButton fx:id="new_customer_btn" layoutX="333.0" layoutY="86.0" onAction="#new_customer_btn" style="-fx-border-color: Yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5;" text="+ New" textFill="#f7ef02">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="add_btn" layoutX="333.0" layoutY="222.0" onAction="#add_btnOnAction" style="-fx-border-color: Yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5;" text="add+" textFill="#f7ef02">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton fx:id="cancel_btn" layoutX="436.0" layoutY="313.0" onAction="#cancel_btnOnAction" style="-fx-border-color: Yellow; -fx-background-radius: 20; -fx-border-radius: 20; -fx-border-width: 5;" text="Cancel" textFill="#f7ef02">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="969.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.gaming_arena.controller.LoginPageFormController">
+   <children>
+      <ImageView fitHeight="712.0" fitWidth="976.0" layoutX="-2.0" layoutY="-10.0">
+         <image>
+            <Image url="@../img/Background.png" />
+         </image>
+      </ImageView>
+      <JFXTextField fx:id="username_txt" focusColor="#fcfcfc" labelFloat="true" layoutX="677.0" layoutY="232.0" onAction="#username_txtOnAction" prefHeight="39.0" prefWidth="239.0" promptText="Username" style="-fx-background-color: white; -fx-background-radius: 10;" unFocusColor="#111010">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="password_txt" focusColor="WHITE" labelFloat="true" layoutX="677.0" layoutY="326.0" onAction="#password_txtOnAction" prefHeight="25.0" prefWidth="239.0" promptText="Password" style="-fx-background-color: White; -fx-background-radius: 10;" unFocusColor="BLACK">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXPasswordField>
+      <JFXButton fx:id="login_btn" contentDisplay="GRAPHIC_ONLY" layoutX="756.0" layoutY="395.0" onAction="#login_btnOnAction" prefHeight="73.0" prefWidth="76.0" style="-fx-background-radius: 20; -fx-border-color: Yellow; -fx-border-radius: 25; -fx-border-width: 5;">
+         <graphic>
+            <ImageView fitHeight="58.0" fitWidth="56.0">
+               <image>
+                  <Image url="@../img/Login_button.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>
